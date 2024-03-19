@@ -1,0 +1,48 @@
+# Spécification de la Rose dorée (Gilded Rose)
+####l'équipe de la Rose dorée.
+#### Petite taverne située à proximité d'une cité importante est dirigée par l'aubergiste amicale Allison.
+
+Nous "achetons et vendons" uniquement les meilleurs produits.
+--> La qualité des marchandises se dégrade constamment à l'approche de leur date de péremption.
+--> Un système de gestion des inventaires avec mise à jour.
+
+
+Task ::: Votre mission est d'ajouter une nouvelle fonctionnalité à notre système pour que nous puissions commencer à vendre un nouveau type de produits.
+
+
+--> Proprietés des produits et leur dynamique
+
+- Tous les éléments ont une valeur `sellIn` qui désigne le nombre de jours restant pour vendre l'article.
+- Tous les articles ont une valeur `quality` qui dénote combien l'article est précieux.
+- À la fin de chaque journée, notre système diminue ces deux valeurs pour chaque produit.
+
+### Exigence fonctionnelle #########################################################
+1+ La qualité varie en adéquation avec la valeur du sellIn (decroissante)
+
+Exemple:  Sellin initial: 30 jours   qualité:  50
+
+2+ Qualité se dégrade deux fois plus après la date de peremption.
+3+ Qualité ne peut jamais être négative
+4+ La qualité d'un produit n'est jamais de plus de 50.
+####################################################################################
+Produit exceptionnel:
+-->>>"Aged Brie" augmente sa qualité (`quality`) plus le temps passe.
+-->>>"Sulfuras", étant un objet légendaire, n'a pas de date de péremption et ne perd jamais en qualité (`quality`)
+ cependant "Sulfuras" est un objet légendaire et comme tel sa qualité est de 80 et elle ne change jamais.
+-->>>"Backstage passes", comme le "Aged Brie", augmente sa qualité (`quality`) plus le temps passe (`sellIn`);
+  Details de ce produit qualité en fonction du sellIn :
+    a. augmente de 2 quand il reste 10 jours jusqu'à 5 jours exclut
+	b. augmente de 3 quand is reste 5 à 1 jours
+	c. tombe à 0 après la date de concert.
+
+##Nouveau produit provenant du partenariat.
+---> les éléments "Conjured" voient leur qualité se dégrader de deux fois plus vite que les objets normaux.
+#########################################################
+
+**********Exigence technique
+changements `updateQuality` et ajouter autant de code que vous voulez, tant que tout fonctionne correctement.
+
+Cependant, nous devons vous prévenir, vous ne devez en aucun cas modifier la classe `Item` ou ses propriétés car cette classe appartient au gobelin à l'étage
+qui entrerait dans une rage instantanée et vous tuerait sans délai : il ne croit pas au partage du code.
+
+????(Vous pouvez rendre la méthode `updateQuality` statique, ainsi que des propriétés dans la classe `Item` si vous voulez, nous vous couvrirons)?????
