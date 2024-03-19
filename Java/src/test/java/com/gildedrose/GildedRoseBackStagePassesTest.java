@@ -80,12 +80,12 @@ class GildedRoseBackStagePassesTest {
      * Initial Quality: 7
      * with SellIn of 20  after 18 days have passed so remaining days equals 2, we have:
      * An increment by one when SellIn is lower and equal to 9 so for the first 10 days
-     * the quality  sums up to 7 + 9 * 1 = 16
+     * the quality  sums up to 7 + 10 * 1 = 17
      * From then 10 to 5 excluded the increment double
-     * 16 + 2 * 5 = 26
+     * 17 + 2 * 4 = 25
      * 15 days have elapsed From 5 to  1  the increment triples
      * We have 3 remaining days
-     * 26 + 4 * 3 = 38
+     * 25 + 4 * 3 = 37
      *
      * Backstage passes to a TAFKAL80ETC concert, 15, 20
      * */
@@ -95,10 +95,10 @@ class GildedRoseBackStagePassesTest {
         Item[] items = new Item[] { new Item("Backstage passes", 20, 7) };
 
         GildedRose app = new GildedRose(items);
-        emulateYDaysPassed(app, 15);
+        emulateYDaysPassed(app, 18);
 
-        assertEquals(5, app.getItems()[0].getSellIn());
-        assertEquals(28, app.getItems()[0].getQuality());
+        assertEquals(2, app.getItems()[0].getSellIn());
+        assertEquals(37, app.getItems()[0].getQuality());
     }
 
     /**

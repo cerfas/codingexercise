@@ -28,3 +28,7 @@ The other relies on your CLASSPATH being set correctly in [environment.gr](../te
 
     executable:com.gildedrose.TexttestFixture
     interpreter:java
+## Quality Assurance
+This version integrates Jacoco Maven plugin for code coverage based on Test.For this exercise, as best practice minimun coverage in terms of "LINE" has been set at 80%.
+## SonarQube
+In addition, this solution integrates with the Sonar Maven plugin for quality tracking.
