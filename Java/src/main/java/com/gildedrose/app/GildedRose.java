@@ -1,6 +1,8 @@
-package com.gildedrose;
+package com.gildedrose.app;
 
-class GildedRose {
+import com.gildedrose.model.Item;
+
+public class GildedRose {
     private final Item[] items;
 
     public GildedRose(Item[] items) {

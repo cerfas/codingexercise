@@ -1,4 +1,8 @@
-package com.gildedrose;
+package com.gildedrose.simulation;
+
+import com.gildedrose.app.GildedRose;
+import com.gildedrose.model.Item;
+
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

@@ -1,7 +1,8 @@
 package com.gildedrose;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import com.gildedrose.app.GildedRose;
+import com.gildedrose.model.Item;
+
 
 public class TexttestFixture {
 

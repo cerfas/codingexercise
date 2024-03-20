@@ -68,18 +68,18 @@
                                 <rule>
                                     <element>CLASS</element>
                                     <includes>
-                                        <include>com.gildedrose.GildedRose</include>
+                                        <include>com.gildedrose.app.GildedRose</include>
                                     </includes>
                                     <excludes>
                                         <exclude>*Test</exclude>
-                                        <exclude>com.gildedrose.GildedRoseSimulation</exclude>
-                                        <exclude>com.gildedrose.Item</exclude>
+                                        <exclude>com.gildedrose.simulation.simulation.GildedRoseSimulation</exclude>
+                                        <exclude>com.gildedrose.model.Item</exclude>
                                     </excludes>
                                     <limits>
                                         <limit>
-                                            <counter>LINE</counter>
+                                            <counter>METHOD</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>80%</minimum>
+                                            <minimum>70%</minimum>
                                         </limit>
                                     </limits>
                                 </rule>

@@ -1,5 +1,8 @@
 package com.gildedrose;
 
+import com.gildedrose.app.GildedRose;
+import com.gildedrose.model.Item;
+
 import org.junit.jupiter.api.Test;
 
 import static com.gildedrose.CommonEmulation.emulateYDaysPassed;

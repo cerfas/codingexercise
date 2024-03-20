@@ -1,5 +1,7 @@
 package com.gildedrose;
 
+import com.gildedrose.model.Item;
+
 public final class TestFixture {
 
     public static Item[] getItemsGeneral() {
