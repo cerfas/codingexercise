@@ -4,7 +4,6 @@ This folder contains Text-Based Approval tests for the GildedRose Refactoring Ka
 
 These tests are designed to be used with the open source testing tool "TextTest", available from [http://texttest.org](http://texttest.org).
 
-
 ## Configure the language version you want to test
 
 Before you can run the tests you need to tell texttest which language version of GildedRose you plan to refactor. Open the file 'config.gr' and edit it. Several languages are supported. All lines starting with '#' are comments in this file. Find the lines referring to the language you want, and uncomment them. 
